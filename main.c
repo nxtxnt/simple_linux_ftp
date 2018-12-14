@@ -18,7 +18,7 @@ int main(int argc, char *argv[]) {
     arg_addr = inet_addr(argv[2]);
     arg_port = atoi(argv[3]);
 /**
-    client_pid = clone((void*) set_client, sbrk(1024*10) + 1024*10,
+    client_pid = clone((void*) set_client, sbrk(1024*10) + 1024*10,           client/ server threads to be implemented later
                                           SIGCHLD | CLONE_VM, arg);**/
     set_client(arg);
   }
