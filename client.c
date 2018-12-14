@@ -93,7 +93,6 @@ int client_connection_handler(int server_sock_desc)
 
 }
 
-
 int recieve_file(int server_sock_desc, int nchunk, int remainder) {
   char buff[CHUNK_MAX_SIZE];
   int errno, i = 0;
